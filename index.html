@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>まったり部屋 | 日々の喧騒を忘れて</title>
+    <meta name="description" content="アニメ系美少女キャラクターの日常を描いたAIイラストギャラリー。まったりとした癒やしの時間をお届けします。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">まったり部屋</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">日々の喧騒を忘れて、<br>ちょっと一息。</h2>
+                <p class="hero-text">可愛いキャラクターたちと過ごす、<br>穏やかな日常のひととき。</p>
+                <a href="#gallery" class="btn">ギャラリーを見る</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/reading.png" alt="読書をする少女">
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-desc">日常のふとした瞬間を切り取りました。</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-image="assets/images/reading.png" data-title="静かな午後の読書">
+                        <img src="assets/images/reading.png" alt="静かな午後の読書" loading="lazy">
+                        <div class="overlay">
+                            <span>View More</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="assets/images/cafe.png" data-title="お気に入りのカフェで">
+                        <img src="assets/images/cafe.png" alt="お気に入りのカフェで" loading="lazy">
+                        <div class="overlay">
+                            <span>View More</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="assets/images/room.png" data-title="休日のまったりタイム">
+                        <img src="assets/images/room.png" alt="休日のまったりタイム" loading="lazy">
+                        <div class="overlay">
+                            <span>View More</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="assets/images/park.png" data-title="桜並木のお散歩">
+                        <img src="assets/images/park.png" alt="桜並木のお散歩" loading="lazy">
+                        <div class="overlay">
+                            <span>View More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <p>「まったり部屋」は、忙しい現代社会に疲れたあなたへ贈る、癒やしの空間です。</p>
+                    <p>AIが描く、どこか懐かしくて温かい日常の風景。</p>
+                    <p>彼女たちの生活を覗き見ながら、あなたも少しだけ肩の力を抜いてみませんか？</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mattari Room. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" alt="" id="modal-image">
+            <h3 id="modal-title"></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

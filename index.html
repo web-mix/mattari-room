@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <meta name="description" content="アニメ系美少女キャラクターの日常を描いたAIイラストギャラリー。まったりとした癒やしの時間をお届けします。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -40,31 +43,9 @@
             <div class="container">
                 <h2 class="section-title">Gallery</h2>
                 <p class="section-desc">日常のふとした瞬間を切り取りました。</p>
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-image="assets/images/reading.png" data-title="静かな午後の読書">
-                        <img src="assets/images/reading.png" alt="静かな午後の読書" loading="lazy">
-                        <div class="overlay">
-                            <span>View More</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-image="assets/images/cafe.png" data-title="お気に入りのカフェで">
-                        <img src="assets/images/cafe.png" alt="お気に入りのカフェで" loading="lazy">
-                        <div class="overlay">
-                            <span>View More</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-image="assets/images/room.png" data-title="休日のまったりタイム">
-                        <img src="assets/images/room.png" alt="休日のまったりタイム" loading="lazy">
-                        <div class="overlay">
-                            <span>View More</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-image="assets/images/park.png" data-title="桜並木のお散歩">
-                        <img src="assets/images/park.png" alt="桜並木のお散歩" loading="lazy">
-                        <div class="overlay">
-                            <span>View More</span>
-                        </div>
-                    </div>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- JavaScriptで動的に追加されます -->
+                    <div class="loading-spinner">Loading images...</div>
                 </div>
             </div>
         </section>
@@ -98,4 +79,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

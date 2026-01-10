@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             } else {
                 div.innerHTML = `
-                    <video src="${media.video}#t=0.001" muted loop playsinline preload="metadata"></video>
+                    <video src="${media.video}#t=0.1" poster="${media.video}#t=0.1" muted loop playsinline preload="metadata"></video>
                     <div class="video-indicator">▶</div>
                     <div class="overlay"><span>Play Video</span></div>
                 `;
@@ -127,7 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (media.video) {
             modalImg.style.display = 'none';
             modalVideo.style.display = 'block';
-            modalVideo.src = `${media.video}#t=0.001`;
+            modalVideo.src = `${media.video}#t=0.1`;
+            modalVideo.setAttribute('poster', `${media.video}#t=0.1`);
             modalVideo.setAttribute('preload', 'metadata');
             modalVideo.play();
         } else {
